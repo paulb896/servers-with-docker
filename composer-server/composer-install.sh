@@ -2,9 +2,9 @@
 
 # Example usage as root:
 # (Pass path to directory in which vendor bundles will be installed)
-# bash composer_install.sh /home/user_you/code/php-project/
+# bash composer-install.sh /home/user_you/code/php-project/
 # or:
-# sudo bash composer_install.sh /home/user_you/code/php-project/
+# sudo bash composer-install.sh /home/user_you/code/php-project/
 
 # Check for help flag
 if [ $1 == "-h" ]; then
@@ -27,6 +27,6 @@ fi
 docker build -t composer-server .
 
 # Run composer update (must include composer.lock)
-docker run -v /home/paul/code/framework-standard-edition:/tmp composer-server php /composer.phar install
+docker run -v $1:/tmp composer-server php /composer.phar install
 
 

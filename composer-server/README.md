@@ -2,10 +2,10 @@
 
 * Composer update to create package.json
 
-        bash composer_intall.sh /absolute/path/to/project/
+        bash composer-update.sh /absolute/path/to/project/
 
 
 * Composer install from package.json
 
-        bash composer_intall.sh /absolute/path/to/project/
+        bash composer-install.sh /absolute/path/to/project/
 

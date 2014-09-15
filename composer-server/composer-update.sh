@@ -2,9 +2,9 @@
 
 # Example usage as root:
 # (Pass path to directory in which composer will create lock file)
-# bash composer_update.sh /home/user_you/code/php-project/
+# bash composer-update.sh /home/user_you/code/php-project/
 # or:
-# sudo bash composer_install.sh /home/user_you/code/php-project/
+# sudo bash composer-update.sh /home/user_you/code/php-project/
 
 # Check for help flag
 if [ $1 == "-h" ]; then
@@ -27,4 +27,4 @@ fi
 docker build -t composer-server .
 
 # Run composer update (must include composer.json)
-docker run -v /home/paul/code/framework-standard-edition:/tmp composer-server php -d memory_limit=2248M /composer.phar update
+docker run -v $1:/tmp composer-server php -d memory_limit=1448M /composer.phar update

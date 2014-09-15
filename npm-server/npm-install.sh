@@ -2,9 +2,9 @@
 
 # Example usage as root:
 # (Pass path to directory in which npm should run)
-# bash npm_install.sh /home/user_you/code/npm-project/
+# bash npm-install.sh /home/user_you/code/npm-project/
 # or:
-# sudo bash npm_install.sh /home/user_you/code/npm-project/
+# sudo bash npm-install.sh /home/user_you/code/npm-project/
 
 # Check for help flag
 if [ $1 == "-h" ]; then

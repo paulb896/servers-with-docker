@@ -3,9 +3,9 @@
 # Script to install bower dependencies
 # Example usage as root:
 # (Pass path to directory in which npm should run)
-# bash bower_install.sh /home/user_you/code/npm-project/
+# bash bower-install.sh /home/user_you/code/npm-project/
 # or:
-# sudo bash bower_install.sh /home/user_you/code/npm-project/
+# sudo bash bower-install.sh /home/user_you/code/npm-project/
 
 # Check for help flag
 if [ $1 == "-h" ]; then

@@ -3,4 +3,4 @@
 
 * NPM install from package.json
 
-        bash npm_install.sh /absolute/path/to/project/
+        bash npm-install.sh /absolute/path/to/project/
