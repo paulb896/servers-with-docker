@@ -1,10 +1,11 @@
 #!/bin/bash
 
+# Script to install bower dependencies
 # Example usage as root:
 # (Pass path to directory in which npm should run)
-# bash npm_install.sh /home/user_you/code/npm-project/
+# bash bower_install.sh /home/user_you/code/npm-project/
 # or:
-# sudo bash npm_install.sh /home/user_you/code/npm-project/
+# sudo bash bower_install.sh /home/user_you/code/npm-project/
 
 # Check for help flag
 if [ $1 == "-h" ]; then
@@ -23,9 +24,9 @@ if [ ! -d "$1" ]; then
 fi
 
 # Build server
-docker build -t npm-server .
+docker build -t bower-server .
  
 # Run npm install
-docker run -v $1:/tmp/ npm-server npm install
-
+# docker run -v $1:/tmp/ bower-server npm install
+docker run -v $1:/tmp/ bower-server node node_modules/bower/bin/bower install --allow-root
 
