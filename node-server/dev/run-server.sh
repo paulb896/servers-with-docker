@@ -2,9 +2,9 @@
 
 # Example usage as root:
 # (Pass path to directory in which npm should run)
-# sudo bash run_server.sh /home/paul/code/ZoomingMapApp/
+# sudo bash run-server.sh /home/paul/code/ZoomingMapApp/
 # -p : port format hostPort:containerPort
-# bash run_server.sh /home/paul/code/ZoomingMapApp/
+# bash run-server.sh /home/paul/code/ZoomingMapApp/
 
 # Check for help flag
 if [ $1 == "-h" ]; then

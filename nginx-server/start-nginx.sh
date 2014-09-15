@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Example usage as root:
-# bash start_nginx.sh /etc/nginx/sites-enabled /var/www 8000
+# bash start-nginx.sh /etc/nginx/sites-enabled /var/www 8000
 # or:
-# sudo bash start_nginx.sh /etc/nginx/sites-enabled /var/www 8000
+# sudo bash start-nginx.sh /etc/nginx/sites-enabled /var/www 8000
 
 # Check for help flag
 if [ $1 == "-h" ]; then
