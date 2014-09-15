@@ -1,7 +1,9 @@
-Servers_With_Docker
+Servers With (the help of) Docker
 ===================
 
-Docker must be install in order to run any of the images within this repo,
+Docker must be installed in order to run any of the images within this repo.
+
+
 Find out more about Docker here: https://www.docker.com/
 
 This repository contains a bunch of server configs for development docker servers

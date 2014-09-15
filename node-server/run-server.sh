@@ -41,8 +41,8 @@ if [ ! $3 > 0 ]; then
 fi
 
 # Build server
-docker build -t dev_node_server .
- 
+docker build -t node-server .
+
 # Start server
-docker run -p "$3:$2" -v $1:/tmp dev_node_server node /tmp/server.js
+docker run -p "$3:$2" -v $1:/tmp node-server node /tmp/server.js
 
