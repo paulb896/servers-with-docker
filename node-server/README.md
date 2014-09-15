@@ -5,16 +5,7 @@
 
         bash run-server.sh /absolute/path/to/project/ serverPort hostPort
 
-    Example
+    Example (node server is listening on 8111 in container, and 8555 on host)
 
-        bash run-server.sh /absolute/path/to/project/ serverPort hostPort
-
-
-* Connect to database
-
-        mongo -host 127.0.0.1:hostPort
-
-    Example
-
-        mongo -host 127.0.0.1:hostPort
+        bash run-server.sh /code/project 8111 8555
 
