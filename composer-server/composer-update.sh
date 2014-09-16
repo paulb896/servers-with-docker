@@ -27,4 +27,4 @@ fi
 docker build -t composer-server .
 
 # Run composer update (must include composer.json)
-docker run -v $1:/tmp composer-server php -d memory_limit=1448M /composer.phar update
+docker run -v $1:/tmp composer-server update

@@ -27,6 +27,6 @@ fi
 docker build -t composer-server .
 
 # Run composer update (must include composer.lock)
-docker run -v $1:/tmp composer-server php /composer.phar install
-
+docker run -v $1:/tmp composer-server install
+# docker run -i -t -v $1:/srv ubermuda/composer install
 
