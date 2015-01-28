@@ -1,4 +1,4 @@
-# Docker file for mongoDB
+# Docker file for mongo
 
 FROM dockerfile/mongodb
 
